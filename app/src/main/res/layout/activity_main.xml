@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/backgound"
     tools:context=".MainActivity">
 
     <ImageView
@@ -25,11 +26,13 @@
             android:textSize="20sp" />
 
         <RadioButton
+            android:id="@+id/male"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Male" />
 
         <RadioButton
+            android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Female" />
@@ -42,18 +45,21 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/age"
             android:inputType="number"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Age"
             android:textAlignment="center" />
         <EditText
+            android:id="@+id/height"
             android:inputType="number"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Height(cm)"
             android:textAlignment="center" />
         <EditText
+            android:id="@+id/weight"
             android:inputType="number"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
@@ -62,11 +68,13 @@
     </LinearLayout>
 <!--    Button   -->
     <Button
+        android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate"/>
 <!--    Result    -->
     <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You are Healthy"
